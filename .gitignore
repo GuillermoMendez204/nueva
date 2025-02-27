@@ -1,0 +1,12 @@
+# Ignore the following files/folders for Unity projects
+/Library/
+/obj/
+/Temp/
+/Build/
+/Builds/
+/.vs/
+/.vscode/
+/.idea/
+/UserSettings/
+/MemoryCaptures/
+/Logs/
