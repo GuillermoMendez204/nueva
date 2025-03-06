@@ -116,6 +116,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Bullet Projectile\BulletProjectile.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Grenade\GrenadeAbility.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldSounds.cs" />
+    <Compile Include="Assets\scripts\CicloDiaNoche.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Base\AbilityData.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldDetection.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Interfaces\IFaction.cs" />
@@ -148,6 +149,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Player\EmeraldGeneralTargetBridge.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\LocationBasedDamageArea.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\AnimationClass.cs" />
+    <Compile Include="Assets\scripts\estrellas.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\General Projectile\GeneralProjectile.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Text Data\EmeraldCombatTextData.cs" />
     <Compile Include="Assets\Emerald AI\Demo\Demo Source\Scripts\MoveToMousePosition.cs" />
