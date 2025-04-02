@@ -90,6 +90,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldWeaponCollision.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldCombat.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Ground Projectile\GroundProjectileAbility.cs" />
+    <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Base\EmeraldAbilityObject.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\AoE\AreaOfEffectAbility.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Base\ActionsClass.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Classes\AttackClass.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\DrawIfAttribute.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Combat Action Scripts\SwitchTargetAction.cs" />
+    <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_Reflection.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\TagAttribute.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldAnimation.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Teleport\TeleportAbility.cs" />
@@ -138,6 +140,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldDamageOverTime.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldSystem.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\DrawIfRangeAttribute.cs" />
+    <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_CamNav.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldAPI.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Arrow Projectile\ArrowProjectile.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\Sound Detection\EmeraldSoundDetector.cs" />
@@ -196,8 +199,10 @@
     <None Include="Assets\Emerald AI\Scripts\Shaders\Emerald AI UI +1.shader" />
     <None Include="Assets\Vefects\Free Fire VFX\Shaders\SH_Vefects_VFX_SRP_Particles_Erosion_01.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\AQUAS-Lite\Shaders\AQUAS-Lite_Frontface.shader" />
     <None Include="Assets\models\pokemons\blastoise\source\3DS - Pokemon X Y - 009 Blastoise\Pokemon XY\Blastoise\Tag.txt" />
     <None Include="Assets\Vefects\Free Fire VFX\Shaders\SH_Vefects_VFX_SRP_Heat_Haze_01.shader" />
+    <None Include="Assets\AQUAS-Lite\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Vefects\Free Fire VFX\_ Extra\Shaders\SH_Vefects_Extra_Billboard_01.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -211,6 +216,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\ModularFirstPersonController\DemoScene\descripcion de pokemones\tyranitar\source\3DS - Pokemon X Y - 248 Tyranitar\Pokemon XY\Tyranitar\Tag.txt" />
     <None Include="Assets\Emerald AI\Scripts\Shaders\Emerald AI UI.shader" />
+    <None Include="Assets\AQUAS-Lite\Shaders\AQUAS-Lite_Backface.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Vefects\Free Fire VFX\_ Extra\Shaders\SH_Vefects_Extra_Grid_01.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

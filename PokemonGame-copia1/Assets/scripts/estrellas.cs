@@ -47,7 +47,6 @@ public class DomeAroundCamera : MonoBehaviour
         SyncStarVisibilityWithMoon(); // Hacer que las estrellas aparezcan y desaparezcan con la luna
     }
 
-    // 🔹 Crear estrellas agrupadas en constelaciones del zodiaco 🔹
     void CreateZodiacStarSphere()
     {
         starMaterials = new Material[numberOfStars];
@@ -60,16 +59,13 @@ public class DomeAroundCamera : MonoBehaviour
         }
     }
 
-    // 🔹 Crear estrellas dentro de un rango específico (para cada constelación) 🔹
     void CreateStarsInRegion(float startAngle, float endAngle, int starsInRegion)
     {
         for (int i = 0; i < starsInRegion; i++)
         {
-            // Ángulos aleatorios dentro del rango de la constelación
-            float theta = Random.Range(startAngle, endAngle); // Ángulo vertical
-            float phi = Random.Range(0f, Mathf.PI * 2); // Ángulo horizontal
+            float theta = Random.Range(0f, Mathf.PI / 2); // Solo la mitad superior
+            float phi = Random.Range(startAngle, endAngle);
 
-            // Convertir coordenadas esféricas a cartesianas
             float x = radius * Mathf.Sin(theta) * Mathf.Cos(phi);
             float y = radius * Mathf.Cos(theta);
             float z = radius * Mathf.Sin(theta) * Mathf.Sin(phi);
@@ -79,7 +75,13 @@ public class DomeAroundCamera : MonoBehaviour
             newStar.transform.SetParent(transform);
             stars.Add(newStar);
 
-            // Guardar materiales para cambiar opacidad y color
+            // Añadir una luz tenue
+            Light starLight = newStar.AddComponent<Light>();
+            starLight.color = new Color(1f, 1f, 0.8f); // Color cálido para las estrellas
+            starLight.intensity = .5f; // Intensidad muy baja
+            starLight.range = 3f;
+            starLight.shadows = LightShadows.None;
+
             Renderer starRenderer = newStar.GetComponent<Renderer>();
             if (starRenderer != null)
             {
@@ -88,32 +90,31 @@ public class DomeAroundCamera : MonoBehaviour
         }
     }
 
-    // 🔹 Hacer que toda la esfera de estrellas gire en la dirección del sol 🔹
     void RotateStarSphere()
     {
         float sunRotationAngle = cicloDiaNoche.sol.localRotation.eulerAngles.y;
         transform.rotation = Quaternion.Euler(0f, sunRotationAngle, 0f);
     }
 
-    // 🔹 Efecto iridiscente en las estrellas 🔹
     void ChangeStarColor()
     {
-        float t = Mathf.InverseLerp(18f, 6f, cicloDiaNoche.hora); // 0 en noche, 1 en día
+        float t = Mathf.InverseLerp(18f, 6f, cicloDiaNoche.hora);
         Color baseColor = starColorGradient.Evaluate(t);
 
         for (int i = 0; i < stars.Count; i++)
         {
             if (starMaterials[i] != null)
             {
-                // Aplicar cambio de color dinámico (efecto iridiscente)
                 float flicker = Mathf.Sin(Time.time * colorChangeSpeed + i) * 0.5f + 0.5f;
                 Color finalColor = Color.Lerp(baseColor, Color.white, flicker);
                 starMaterials[i].color = finalColor;
+
+                starMaterials[i].EnableKeyword("_EMISSION");
+                starMaterials[i].SetColor("_EmissionColor", finalColor * 0.5f);
             }
         }
     }
 
-    // 🔹 Sincronizar visibilidad de las estrellas con la luna 🔹
     void SyncStarVisibilityWithMoon()
     {
         bool isNight = cicloDiaNoche.hora >= 18f || cicloDiaNoche.hora <= 6f;
@@ -121,6 +122,11 @@ public class DomeAroundCamera : MonoBehaviour
         foreach (GameObject star in stars)
         {
             star.SetActive(isNight);
+            Light starLight = star.GetComponent<Light>();
+            if (starLight != null)
+            {
+                starLight.enabled = isNight;
+            }
         }
     }
 }
