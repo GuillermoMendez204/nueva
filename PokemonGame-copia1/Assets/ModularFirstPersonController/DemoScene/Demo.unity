@@ -12323,7 +12323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 1436343272210512405, guid: 4a6829d56df371c469fbd41f503fc50e, type: 3}
   numberOfStars: 1000
-  radius: 300
+  radius: 500
   cicloDiaNoche: {fileID: 1156461143}
   starColorGradient:
     serializedVersion: 2
@@ -17189,7 +17189,7 @@ Transform:
   m_GameObject: {fileID: 1859954346}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 260, z: -48}
+  m_LocalPosition: {x: 7, y: 350, z: -48}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
