@@ -179,6 +179,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\Bullet Projectile\BulletProjectileAbility.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Player\EmeraldPlayerBridge.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\General Projectile\GeneralProjectileAbility.cs" />
+    <Compile Include="Assets\textures\ketchum\UIMovement.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Interfaces\IAvoidable.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Player\TestPlayerBridge.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Managers\EmeraldEventsManager.cs" />
@@ -202,6 +203,7 @@
     <None Include="Assets\Vefects\Free Fire VFX\Shaders\SH_Vefects_VFX_SRP_Particles_Erosion_01.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\AQUAS-Lite\Shaders\AQUAS-Lite_Frontface.shader" />
+    <None Include="Assets\textures\ketchum\Font License.txt" />
     <None Include="Assets\Vefects\Free Fire VFX\Shaders\SH_Vefects_VFX_SRP_Heat_Haze_01.shader" />
     <None Include="Assets\AQUAS-Lite\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
