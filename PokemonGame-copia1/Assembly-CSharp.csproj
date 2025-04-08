@@ -93,6 +93,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Base\EmeraldAbilityObject.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Ability Objects\Ability Object Scripts\AoE\AreaOfEffectAbility.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Profiles and Objects\Combat Actions\Base\ActionsClass.cs" />
+    <Compile Include="Assets\scripts\StartGamePrompt.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Enums\AbilityConditionTypes.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\TargetPositionModifier.cs" />
     <Compile Include="Assets\scripts\NPCAnimationController.cs" />
@@ -136,6 +137,7 @@
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Enums\AttackPickTypes.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Optional\EmeraldDebugger.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Interfaces\IDamageable.cs" />
+    <Compile Include="Assets\scripts\ExitOnEsc.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\EmeraldDamageOverTime.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Components\Required\EmeraldSystem.cs" />
     <Compile Include="Assets\Emerald AI\Scripts\Internal\Property Drawers\DrawIfRangeAttribute.cs" />
