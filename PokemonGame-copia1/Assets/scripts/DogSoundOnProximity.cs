@@ -30,11 +30,12 @@ public class DogSoundOnProximity : MonoBehaviour
             audioSource.Play();
             hasBarked = true;
         }
-        // Si el jugador sale del rango, resetear el flag
+        // Si el jugador sale del rango
         else if (distanceToPlayer > detectionRange)
         {
+            if (audioSource.isPlaying)
+                audioSource.Stop(); // Cortar el audio si aún está sonando
             hasBarked = false;
         }
     }
 }
-
